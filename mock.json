@@ -1,0 +1,29 @@
+{
+  "mockArtworks": [
+    {
+      "title": "Sunflowers",
+      "culture": "Dutch",
+      "dated": "1888"
+    },
+    {
+      "title": "The Great Wave off Kanagawa",
+      "culture": "Japanese",
+      "dated": "1831"
+    },
+    {
+      "title": "Mona Lisa",
+      "culture": "Italian",
+      "dated": "1503"
+    },
+    {
+      "title": "Girl with a Pearl Earring",
+      "culture": "Dutch",
+      "dated": "1665"
+    },
+    {
+      "title": "The Starry Night",
+      "culture": "Dutch",
+      "dated": "1889"
+    }
+  ]
+}
