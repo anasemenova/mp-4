@@ -4,6 +4,8 @@ import {Artwork} from "@/types";
 export default async function Home() {
     const artworks: Artwork[] = await getArtworks();
 
+
+
     return (
         <main className="p-8 max-w-5xl mx-auto text-white">
             <h2 className="text-2xl font-semibold mb-6">Harvard Art Collection</h2>

@@ -10,9 +10,9 @@ export default async function getArtworks(): Promise<Artwork[]> {
         throw new Error("Could not fetch artwork data");
     }
 
-    const json: { records: any[] } = await data.json();
+    const json= await data.json();
 
-    return json.records.map((item: any) => ({
+    return json.records.map((item) => ({
         title: item.title || "Untitled",
         culture: item.culture || "Unknown",
         dated: item.dated || "Unknown",
