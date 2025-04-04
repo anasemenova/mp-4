@@ -3,7 +3,7 @@ import {Artwork} from "@/types";
 
 export default async function getArtworks(): Promise<Artwork[]> {
     const key = process.env["ARTWORK_API_KEY"];
-    const data = await fetch(`https://api.harvardartmuseums.org/object?apikey=${key}&size=10`)
+    const data = await fetch(`https://api.harvardartmuseums.org/object?apikey=${key}&size=21`)
 
     //throw an error here?
 
