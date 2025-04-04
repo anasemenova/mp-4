@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: "Project using Harvard Art Museum API",
 };
 
+//following code is from one of the labs
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
     return (
         <html lang="en">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function Header() {
+    //styling here is from one of the labs
     const linkStyling = "p-1 m-2 text-xl hover:underline";
     return (
         <header className="flex justify-between items-center h-20">

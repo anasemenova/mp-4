@@ -5,12 +5,11 @@ export default async function getArtworks(): Promise<Artwork[]> {
     const key = process.env["ARTWORK_API_KEY"];
     const data = await fetch(`https://api.harvardartmuseums.org/object?apikey=${key}&size=10`)
 
-    //throw an error here
+    //throw an error here?
 
+    const output: { records: Artwork[] } = await data.json();
 
-    const actual = await data.json();
-
-    return actual.records.map((item:object) => ({
+    return output.records.map((item: Artwork) => ({
         title: item.title || "Untitled",
         culture: item.culture || "Unknown",
         dated: item.dated || "Unknown",
